@@ -83,15 +83,15 @@
               errorElement: '.form-message',
               formGroupSelector: '.form-group',
               rules: [
-                  // Validator.isRequired('#fullname'),
-                  // Validator.isRequired('#email'),
-                  // Validator.isEmail('#email'),
-                  // Validator.isRequired('#password'),
-                  // Validator.minLength('#password',6),
-                  // Validator.isRequired('input[name="gender"]'),
-                  // Validator.isRequired('#province'),
+                  Validator.isRequired('#fullname'),
+                  Validator.isRequired('#email'),
+                  Validator.isEmail('#email'),
+                  Validator.isRequired('#password'),
+                  Validator.minLength('#password',6),
+                  Validator.isRequired('input[name="gender"]'),
+                  Validator.isRequired('#province'),
                   Validator.isRequired('#avatar'),
-                  // Validator.isRequired('#password_confirmation'),
+                  Validator.isRequired('#password_confirmation'),
                   Validator.isConfirmation('#password_confirmation', () => {
                     return document.querySelector('#form-1 #password').value
                   }, 'Mật khẩu nhập lại không chính xác')
